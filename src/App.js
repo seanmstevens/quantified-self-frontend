@@ -1,9 +1,10 @@
-import "bootswatch/dist/minty/bootstrap.min.css";
+import "bootswatch/dist/zephyr/bootstrap.min.css";
 
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
+  Redirect
 } from "react-router-dom"
 
 import Header from './Header';
@@ -23,6 +24,9 @@ function App() {
         </Row>
         <Row>
           <Switch>
+            <Route exact path="/">
+              <Redirect to="/summaries" />
+            </Route>
             <Route path="/summaries">
               <Summaries />
             </Route>

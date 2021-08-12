@@ -3,7 +3,7 @@ import { Link, withRouter } from "react-router-dom"
 
 const Navigation = (props) => {
   return (
-    <Nav variant="pills" activeKey={props.location.pathname} className="pt-5 pb-3">
+    <Nav variant="pills" activeKey={props.location.pathname} className="mt-5 mb-5">
       <Nav.Item>
         <Nav.Link as={Link} to="/summaries" eventKey="/summaries">
           Summaries
